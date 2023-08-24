@@ -3,19 +3,25 @@ body{
     align-items: center;
     flex-direction: column;
     gap:10px;
+    background:#ededed;
 }
 #container{
     display:grid;
     
     background-color: white;
-    border: 5px solid red;
+    border: 5px hsl(0 0% 93%);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+
 }
 
 button{
+    font-family: 'roboto';
     border: none;
-    background: hsl(0 0% 93%);
+    background:#bb86fc;
     border-radius: .25rem;
     padding: .75rem 1rem;
+    font-size: 20px;
+    color: aliceblue;
 }
 
 .gridCell{

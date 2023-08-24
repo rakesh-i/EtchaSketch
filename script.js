@@ -26,6 +26,9 @@ function clearboard(){
 
 function select(){
     let x = prompt("Enter the number of sides",'');
+    if(!x){
+        x = 5;
+    }
     creategrid(x);
 }
 
@@ -33,11 +36,11 @@ function rainbow(){
     rain = (rain==1)?0:1;
     
     if(rain==1){
-        rbut.style.background = "red";
-        sbut.style.background = "hsl(0 0% 93%)";
+        rbut.style.background = "#3700b3";
+        sbut.style.background = "#bb86fc";
     }
     else{
-        rbut.style.background = "hsl(0 0% 93%)";
+        rbut.style.background = "#bb86fc";
     }
     shading = 0;
     console.log(rain);
@@ -46,11 +49,11 @@ function rainbow(){
 function shade(){
     shading = (shading==1)?0:1;
     if(shading==1){
-        sbut.style.background = "red";
-        rbut.style.background = "hsl(0 0% 93%)";
+        sbut.style.background = "#3700b3";
+        rbut.style.background = "#BB86Fc";
     }
     else{
-        sbut.style.background = "hsl(0 0% 93%)";
+        sbut.style.background = "#bb86fc";
     }
     rain = 0;
     console.log(shading);
