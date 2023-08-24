@@ -1,8 +1,21 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
 #container{
     display:grid;
     
     background-color: white;
     border: 5px solid red;
+}
+
+button{
+    border: none;
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
 }
 
 .gridCell{
